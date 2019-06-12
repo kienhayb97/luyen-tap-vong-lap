@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="show()">
+    choi
+</button>
+<script>
+
+    function show() {
+        let dau=parseInt(prompt("ban muốn đoán trong khoảng dau"));
+        let cuoi=parseInt(prompt("ban muốn đoán trong khoảng cuoi"));
+        let songaunhien=Math.round(Math.random()*(cuoi-dau)+dau)
+        let songuoidungdoan=parseInt(prompt("ban muốn đoán so nao"));
+       for (i=0;i<3;i++)
+       {
+           if (i==2){
+               alert("thua cuoc");
+               break;
+           }
+           if (songuoidungdoan==songaunhien){
+               alert("chung mung ban");
+           break;
+           }
+           else{
+               alert("ban da doan sai")
+               let songuoidungdoan=parseInt(prompt("ban muốn đoán so nao"));
+           }
+
+       }
+
+    }
+
+</script>
+</body>
+</html>
